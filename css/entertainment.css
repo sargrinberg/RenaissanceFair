@@ -1,0 +1,435 @@
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Pirata_One';
+	src: url(../fonts/Pirata_One/PirataOne-Regular.ttf);
+}
+
+.programs { /* this is the hero image area */
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; /* makes sure that this section stretches to the entire width of the web browser */
+	height: 400px; /* same idea but for the vertical height of the web browser */
+	background-color: #6C1F5F;
+	background-image: url(..//images/knights.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: relative;
+}
+
+.programs_content {	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.one {
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+	width: 1000px;
+	padding-top: 50px;
+	background: red;
+	margin: auto; /* makes sure that the section is centered on the page */
+	background-image: url(../images/Background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.one_content {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	text-align: center;
+	width: 700px;
+	gap: 20px;
+}
+
+.one_content p.one_content_first {
+	font-size: 16pt;
+	font-weight: bold;
+	line-height: 1.1;
+	font-family: 'Roboto';
+}
+
+.one_content p.one_content_first {
+	font-size: 16pt;
+	line-height: 1.1;
+	font-family: 'Roboto';
+	margin: 50px;
+}
+
+.one .action-button-container {
+    margin-bottom: 50px;
+}
+
+.one .lute_logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.lute_logo img {
+	width: 300px;
+	height: auto;
+	position: relative;
+	top: 0px;
+	left: 50px;
+}
+
+.lute_logo .lute_logo_banner {
+	position: absolute;
+	top: 220px;
+}
+
+.lute_logo_banner .lute_logo_text {
+	position: absolute;
+	top: 0;
+	left: -250px;	
+	background-color: #6C1F5F;
+	padding: 20px;
+	width: 450px;	
+	z-index: 10;
+}
+
+.lute_logo_banner .flag-right {
+	position: absolute;	
+	top: 30px;
+	right: -350px;	
+}
+
+.lute_logo_banner .flag-left {
+	position: absolute;
+	top: 30px;
+	left: -450px;
+}
+
+.lute_logo_banner .lute_logo_text h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #EBAF1E;
+}
+
+.lute_logo .flag-right img,
+.lute_logo .flag-left img {
+	width: 200px;
+	height: auto;
+}
+
+.shields {
+	width: 1000px;
+	height: 70vh;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	gap: 60px;
+	background: #353083;
+}
+
+.shields h2 {
+	padding-top: 50px;
+	font-size: 37pt;
+	font-family: Pirata_one;
+	color: white;
+}
+
+.shields p {
+	font-family: 'Roboto';
+	font-size: 14pt;
+	color: white;
+	line-height: 1.1;
+}
+
+.shields_carousel {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 300px;
+	width: 100%;
+}
+
+.shields_carousel img {
+	width:100%;
+	height: 100%;	
+}
+
+.shields_carousel img.dimmed {
+	opacity: 0.4;
+}
+
+.shields_carousel div {
+	position: relative;
+}
+
+.shields_carousel div i {
+	position: absolute;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.shields_carousel div i.left {
+	top: 130px;
+	left: 100px;
+}
+
+.shields_carousel div i.right {
+	top: 130px;
+	right: 100px;
+}
+
+.shields_description {
+	position: relative;
+}
+
+.shields_carousel .shields_text span {	
+	font-family: 'Roboto';
+	font-size: 14pt;
+	color:#EBAF1E;	
+	position: absolute;
+	bottom: 170px;
+	left: 85px;
+	display: none;
+	pointer-events: none;
+	z-index: 100;
+}
+
+.shields_carousel .central_image {
+	transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.shields_carousel .central_image:hover {
+	opacity: 0.3;	
+	transform: scale(1.1);
+}
+
+.shields_carousel .central_image:hover~div.shields_text span {
+	display: block;
+}
+
+.shield_chevron {
+	color: #EBAF1E; 
+	font-size: 30pt;
+}
+
+/* Section Detail Styles */
+.section_detail {	
+	max-width: 1000px;
+	height: auto;
+	margin: 0 auto;	
+	background-color: #F5F5F5;
+	
+}
+
+.section_detail h2 {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 37pt;
+	font-family: Pirata_one;
+}
+
+.detail_cards_container {
+	display: grid;	
+	grid-template-columns: repeat(2, 1fr); 
+}
+
+.detail_card {
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-start;	
+	gap: 20px;
+	background-color: #6C1F5F;
+	width: 400px;
+	padding: 20px;
+	margin: 30px;
+}
+
+.detail_card_header {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.detail_card_header img {
+	width: 100%;	
+}
+
+.detail_card_header h3 {
+	font-family: 'Roboto';
+	font-size: 25pt;
+	color:#EBAF1E;	
+}
+
+.detail_card_content p {
+	color: white;
+	font-family: 'Roboto';
+	font-size: 14pt;
+	line-height: 1.1;
+}
+
+.detail_card_link {
+	border: 2px #EBAF1E solid;
+	max-width: fit-content;
+	padding: 8px;
+}
+
+.section_detail_container {
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+	padding: 150px 50px 50px 50px;
+}
+
+.section_detail_header_wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.section_detail_header_wrapper img {	
+	width: 400px;
+	height: auto;
+}
+
+.section_detail_split_image {
+	position: relative;
+}
+
+.section_detail_split_image img {
+	width: 400px;
+	height: auto;
+	position: absolute;
+	bottom: -113px;
+	left: 170px;
+}
+
+.section_detail_header {
+	display: flex;
+	flex-direction: column;
+}
+
+.section_detail_header h2 {
+	text-align: center;
+	font-family: 'Pirata_One';
+	font-size: 30pt;
+	margin-bottom: 30px;
+}
+
+.section_detail_header p {
+	color: white;
+	font-size: 14pt;
+	font-family: 'Roboto';
+}
+
+/* Section Two */
+.two {	
+	width: 1000px;
+	height: 70vh;
+	background: #F5F5F5;
+	margin: auto;
+}
+
+.two_container {
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+	padding: 150px 50px 50px 50px;
+}
+
+.two_announcement-text {
+	font-size: 30;
+	text-align: center;
+	width: 890px;
+	color: #EBAF1E;
+	text-align: center;
+	font-family: 'Roboto';
+}
+
+.two_announcement,
+.three_announcement {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
+.two_announcement img {
+	width: 400px;
+	height: auto;
+}
+
+.two_announcement_content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;	
+}
+
+.two_announcement_content .action-button-container {
+	margin-top: 70px;
+	
+}
+
+.two_announcement h2 {
+	color: #353083;
+	text-align: center;
+	font-family: 'Pirata_One';
+	font-size: 30pt;
+	margin-bottom: 30px;
+}
+
+.two_announcement p {
+	color: black;
+	font-size: 14pt;
+	font-family: 'Roboto';
+}
+
+h2.purple {
+	color: #6C1F5F;
+	font-family: 'Pirata_One';
+}
+
+h2.gold {
+	color: #EBAF1E;
+	font-family: 'Pirata_One';
+}
+
+p.notes {
+	color: black;
+}
+
+span.gold {
+	color:#EBAF1E;
+}
+
+span.purple {
+	color: #6C1F5F;
+}
+
+.white {
+	background-color: white;
+}
+
+.light {
+    background-color: #F5F5F5;
+}
+
+.purple {
+	background-color: #353083;
+}
+
+.gray {
+	background-color: #F5F5F5;
+}
